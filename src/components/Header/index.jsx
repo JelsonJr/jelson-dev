@@ -1,18 +1,28 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { StyledHeader, Logo, NavList } from "./styles";
 import { LanguagesContext } from "../../context/contextLanguage";
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [isColoring, setIsColoring] = useState(false);
     const { texts, language } = useContext(LanguagesContext);
 
-    const handleToggleMenu = () => {
-        setIsOpen(!isOpen);
-    };
+    const handleToggleMenu = () => setIsOpen(!isOpen);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsColoring(window.scrollY >= 450);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
 
     return (
-        <StyledHeader>
-            <Logo>
+        <StyledHeader $isColoring={isColoring}>
+            <Logo $isColoring={isColoring}>
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     x="0px"
@@ -25,7 +35,7 @@ const Header = () => {
                 </svg>
             </Logo>
             <nav>
-                <NavList>
+                <NavList $isOpen={isOpen}>
                     <li>{texts[language].nav.home}</li>
                     <li>{texts[language].nav.about}</li>
                     <li>{texts[language].nav.projects}</li>

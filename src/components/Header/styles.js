@@ -1,12 +1,17 @@
 import styled from "styled-components";
 
 export const StyledHeader = styled.header`
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 50px;
-    background-color: transparent;
-    color: #f7f7f7;
+    background-color: ${props => props.$isColoring ? '#fff' : 'transparent'};
+    color: ${props => props.$isColoring ? '#252525' : '#f7f7f7'}; 
     height: 130px;
 
     .hamburger-menu {
@@ -14,7 +19,7 @@ export const StyledHeader = styled.header`
         display: none;
         width: 50px;
         height: 7px;
-        background-color: white;
+        background-color: ${props => props.$isColoring ? '#252525' : '#fff'};
         cursor: pointer;
         transition: 0.4s;
 
@@ -24,7 +29,7 @@ export const StyledHeader = styled.header`
             position: absolute;
             width: 100%;
             height: 7px;
-            background-color: white;
+            background-color: ${props => props.$isColoring ? '#252525' : '#fff'};
             transition: 0.4s;
         }
 
@@ -94,9 +99,10 @@ export const Logo = styled.div`
     svg {
         width: 100px;
         height: 100px;
+        transition: 0.3s;
 
         path {
-            fill: #fff;
+            fill: ${props => props.$isColoring ? '#252525' : '#f7f7f7'}; 
         }
     }
 
@@ -166,14 +172,14 @@ export const NavList = styled.ul`
     }
 
     @media (max-width: 768px) {
-        display: flex;
+        display: ${props => props.$isOpen ? 'flex' : 'none'};
         flex-direction: column;
         gap: 30px;
-        margin-top: 450px;
-        text-align: center;
+        margin-top: 300px;
+        margin-left: 100px;
+        align-items: end;
 
         li {
-            text-align: center;
             font-size: 16px;
         }
     }
