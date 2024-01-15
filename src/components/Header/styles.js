@@ -10,7 +10,8 @@ export const StyledHeader = styled.header`
     justify-content: space-between;
     align-items: center;
     padding: 10px 50px;
-    background-color: ${props => props.$isColoring ? '#fff' : 'transparent'};
+    background-color: #252525;
+    /* background-color: ${props => props.$isColoring ? '#fff' : 'transparent'}; */
     color: ${props => props.$isColoring ? '#252525' : '#f7f7f7'}; 
     height: 130px;
 
@@ -175,9 +176,13 @@ export const NavList = styled.ul`
         display: ${props => props.$isOpen ? 'flex' : 'none'};
         flex-direction: column;
         gap: 30px;
-        margin-top: 300px;
-        margin-left: 100px;
         align-items: end;
+        
+        position: absolute;
+        top: 80%;
+        right: 20%;
+        background-color: #252525;
+        width: 100%
 
         li {
             font-size: 16px;
