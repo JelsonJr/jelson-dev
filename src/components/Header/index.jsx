@@ -7,20 +7,14 @@ const Header = () => {
     const [isColoring, setIsColoring] = useState(false);
     const { texts, language } = useContext(LanguagesContext);
 
-    const handleToggleMenu = () => {
-        setIsOpen(!isOpen);
-    };
+    const handleToggleMenu = () => setIsOpen(!isOpen);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            setIsColoring(window.scrollY >= 450);
-        };
+    // useEffect(() => {
+    //     const handleScroll = () => setIsColoring(window.scrollY >= 450);
+    //     window.addEventListener("scroll", handleScroll);
 
-        window.addEventListener("scroll", handleScroll);
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, []);
+    //     return () => window.removeEventListener("scroll", handleScroll);
+    // }, []);
 
     useEffect(() => setIsColoring(isOpen), [isOpen]);
 

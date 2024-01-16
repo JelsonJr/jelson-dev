@@ -1,4 +1,15 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+`;
 
 export const StyledHeader = styled.header`
     position: fixed;
@@ -10,10 +21,10 @@ export const StyledHeader = styled.header`
     justify-content: space-between;
     align-items: center;
     padding: 10px 50px;
+    height: 130px;
     background-color: ${props => props.$isColoring ? '#fff' : 'transparent'};
     color: ${props => props.$isColoring ? '#252525' : '#f7f7f7'}; 
-    height: 130px;
-
+   
     .hamburger-menu {
         position: relative;
         display: none;
@@ -139,9 +150,9 @@ export const NavList = styled.ul`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 100px;
     list-style: none;
-    transition: 1s;
+    gap: 100px;
+    
     li {
         text-decoration: none;
         font-size: 28px;
@@ -169,20 +180,41 @@ export const NavList = styled.ul`
         }
     }
 
-    @media (max-width: 768px) {
+   @media (max-width: 768px) {
         display: ${props => props.$isOpen ? 'flex' : 'none'};
         flex-direction: column;
         gap: 30px;
         align-items: stretch;
-        
         position: absolute;
         top: 80%;
         left: 0;
         width: 100%;
         background-color: ${props => props.$isOpen ? '#fff' : 'transparent'};
+        animation: ${props => props.$isOpen ? fadeIn : 'none'} 0.5s ease-in-out;
 
         li {
             font-size: 20px;
+            opacity: ${props => props.$isOpen ? 1 : 0};
+            transition: opacity 0.5s ease-in-out;
+        }
+    }
+
+   @media (max-width: 768px) {
+        display: ${props => props.$isOpen ? 'flex' : 'none'};
+        flex-direction: column;
+        gap: 30px;
+        align-items: stretch;
+        position: absolute;
+        top: 80%;
+        left: 0;
+        width: 100%;
+        background-color: ${props => props.$isOpen ? '#fff' : 'transparent'};
+        animation: ${props => props.$isOpen ? fadeIn : 'none'} 0.5s ease-in-out;
+
+        li {
+            font-size: 16px;
+            opacity: ${props => props.$isOpen ? 1 : 0};
+            transition: opacity 0.5s ease-in-out;
         }
     }
 `;
