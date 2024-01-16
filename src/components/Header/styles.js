@@ -10,8 +10,7 @@ export const StyledHeader = styled.header`
     justify-content: space-between;
     align-items: center;
     padding: 10px 50px;
-    background-color: #252525;
-    /* background-color: ${props => props.$isColoring ? '#fff' : 'transparent'}; */
+    background-color: ${props => props.$isColoring ? '#fff' : 'transparent'};
     color: ${props => props.$isColoring ? '#252525' : '#f7f7f7'}; 
     height: 130px;
 
@@ -142,14 +141,12 @@ export const NavList = styled.ul`
     align-items: center;
     gap: 100px;
     list-style: none;
-    transition: 0.5s;
-
+    transition: 1s;
     li {
         text-decoration: none;
         font-size: 28px;
         cursor: pointer;
         position: relative;
-        transition: 0.3s;
 
         &:hover {
             opacity: 0.5;
@@ -176,16 +173,16 @@ export const NavList = styled.ul`
         display: ${props => props.$isOpen ? 'flex' : 'none'};
         flex-direction: column;
         gap: 30px;
-        align-items: end;
+        align-items: stretch;
         
         position: absolute;
         top: 80%;
-        right: 20%;
-        background-color: #252525;
-        width: 100%
+        left: 0;
+        width: 100%;
+        background-color: ${props => props.$isOpen ? '#fff' : 'transparent'};
 
         li {
-            font-size: 16px;
+            font-size: 20px;
         }
     }
 `;
