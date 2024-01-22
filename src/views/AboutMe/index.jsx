@@ -11,9 +11,14 @@ const Container = styled.section`
 const AboutMe = () => {
     const { texts, language } = useContext(LanguagesContext);
 
+    const text = texts[language].about.description;
+
     return (
         <Container>
             <Title id="aboutMe">{texts[language].about.title}</Title>
+            <div>
+                <p>{text}</p>
+            </div>
         </Container>
     );
 };
