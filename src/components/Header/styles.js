@@ -3,36 +3,39 @@ import styled, { keyframes } from "styled-components";
 const fadeIn = keyframes`
   from {
     opacity: 0;
-    transform: translateX(-20px);
+    transform: translateY(-30px); 
   }
   to {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
   }
 `;
 
 export const StyledHeader = styled.header`
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    width: 1950px;
+    height: 140px;
+    padding: 15px 40px;
+    max-width: 100%;
     position: fixed;
     top: 0;
-    left: 0;
-    right: 0;
     z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 50px;
-    height: 130px;
-    background-color: ${props => props.$isColoring ? '#fff' : 'transparent'};
-    color: ${props => props.$isColoring ? '#252525' : '#f7f7f7'}; 
-   
+    background-color: ${props => (props.$isColoring ? "#fff" : "transparent")};;
+    color: ${props => (props.$isColoring || props.$isOpen ? "#252525" : "#fff")};
+
     .hamburger-menu {
         position: relative;
+        z-index: 1000;
+        right: 0;
         display: none;
         width: 50px;
         height: 7px;
-        background-color: ${props => props.$isColoring ? '#252525' : '#fff'};
-        cursor: pointer;
+        background-color: ${props => (props.$isColoring || props.$isOpen ? "#252525" : "#fff")};
         transition: 0.4s;
+        cursor: pointer;
 
         &::before,
         &::after {
@@ -40,8 +43,8 @@ export const StyledHeader = styled.header`
             position: absolute;
             width: 100%;
             height: 7px;
-            background-color: ${props => props.$isColoring ? '#252525' : '#fff'};
-            transition: 0.4s;
+            background-color: ${props => (props.$isColoring || props.$isOpen ? "#252525" : "#fff")};
+            transition: 0.6s;
         }
 
         &::before {
@@ -71,7 +74,6 @@ export const StyledHeader = styled.header`
         }
 
         @media (max-width: 480px) {
-            display: block;
             width: 30px;
             height: 4px;
 
@@ -87,20 +89,6 @@ export const StyledHeader = styled.header`
             &::after {
                 top: 12px;
             }
-
-            &.open {
-                transform: rotate(45deg);
-
-                &::before {
-                    top: 0;
-                    transform: rotate(90deg);
-                }
-
-                &::after {
-                    top: 0;
-                    transform: rotate(180deg);
-                }
-            }
         }
     }
 `;
@@ -113,7 +101,7 @@ export const Logo = styled.div`
         transition: 0.3s;
 
         path {
-            fill: ${props => props.$isColoring ? '#252525' : '#f7f7f7'}; 
+            fill: ${props => (props.$isColoring ? "#252525" : "#fff")};
         }
     }
 
@@ -148,16 +136,15 @@ export const Logo = styled.div`
 
 export const NavList = styled.ul`
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     list-style: none;
     gap: 100px;
-    
+
     li {
-        text-decoration: none;
         font-size: 28px;
+        transition: 0.4s;
         cursor: pointer;
-        position: relative;
 
         &:hover {
             opacity: 0.5;
@@ -172,49 +159,44 @@ export const NavList = styled.ul`
         }
     }
 
-    @media (max-width: 940px) {
+    @media (max-width: 964px) {
         gap: 45px;
 
         li {
             font-size: 20px;
         }
     }
-
-   @media (max-width: 768px) {
-        display: ${props => props.$isOpen ? 'flex' : 'none'};
+    
+    @media (max-width: 768px) {
+        display: ${props => (props.$isOpen ? "flex" : "none")};
         flex-direction: column;
-        gap: 30px;
-        align-items: stretch;
-        position: absolute;
-        top: 80%;
-        left: 0;
-        width: 100%;
-        background-color: ${props => props.$isOpen ? '#fff' : 'transparent'};
-        animation: ${props => props.$isOpen ? fadeIn : 'none'} 0.5s ease-in-out;
+        align-items: center;
+        justify-content: space-around;
+        gap: 0px;
+        width: 60%;
+        height: 100%;
+        padding: 15px 0px;
+        position: fixed; 
+        top: -16px;
+        bottom: 0;
+        right: 0;
+        z-index: 999;
+        
+        background-color: ${props => (props.$isOpen ? "#fff" : "transparent")};
+        animation: ${props => (props.$isOpen ? fadeIn : "none")} 0.8s ease-in-out;
 
         li {
             font-size: 20px;
-            opacity: ${props => props.$isOpen ? 1 : 0};
-            transition: opacity 0.5s ease-in-out;
-        }
+            
+        } 
     }
 
-   @media (max-width: 768px) {
-        display: ${props => props.$isOpen ? 'flex' : 'none'};
-        flex-direction: column;
-        gap: 30px;
-        align-items: stretch;
-        position: absolute;
-        top: 80%;
-        left: 0;
+    @media (max-width: 480px) {
+        padding: 25px 0px;
+        width: 70%;
+    } 
+
+    @media (max-width: 320px) {
         width: 100%;
-        background-color: ${props => props.$isOpen ? '#fff' : 'transparent'};
-        animation: ${props => props.$isOpen ? fadeIn : 'none'} 0.5s ease-in-out;
-
-        li {
-            font-size: 16px;
-            opacity: ${props => props.$isOpen ? 1 : 0};
-            transition: opacity 0.5s ease-in-out;
-        }
-    }
+    } 
 `;

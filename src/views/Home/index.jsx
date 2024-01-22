@@ -5,15 +5,17 @@ import React, { useContext, useState } from "react";
 import { LanguagesContext } from "../../context/contextLanguage";
 
 const Container = styled.section`
-    background-image: url(${BackgroundImage});
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height: 100vh;
+    background-image: url(${BackgroundImage});
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    opacity: ${props => (props.$isMenuOpen ? 0.8 : 1)};
 `;
 
 const Title = styled.h1`
@@ -43,6 +45,8 @@ const Force = styled.span`
 const Home = () => {
     const { texts, language } = useContext(LanguagesContext);
     const [isAudioPlaying, setAudioPlaying] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
     const audioRef = React.createRef();
 
     const playAudio = () => {
@@ -56,13 +60,16 @@ const Home = () => {
     };
 
     return (
-        <Container>
-            <Header />
-            <Title onClick={playAudio}>
-                {texts[language].header.title} <Force>{texts[language].header.force}</Force> {texts[language].header.restOfTitle}
-            </Title>
-            <audio ref={audioRef} src={texts[language].audio} />
-        </Container>
+        <>
+            <Header isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} />
+            <Container $isMenuOpen={isMenuOpen}>
+                <Title onClick={playAudio}>
+                    {texts[language].header.title} <Force>{texts[language].header.force}</Force>{" "}
+                    {texts[language].header.restOfTitle}
+                </Title>
+                <audio ref={audioRef} src={texts[language].audio} />
+            </Container>
+        </>
     );
 };
 
