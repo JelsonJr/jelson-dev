@@ -175,7 +175,7 @@ export const NavList = styled.ul`
         gap: 0px;
         width: 60%;
         height: 100%;
-        padding: 15px 0px;
+        padding: 25px 0px;
         position: fixed; 
         top: -16px;
         bottom: 0;
@@ -192,11 +192,11 @@ export const NavList = styled.ul`
     }
 
     @media (max-width: 480px) {
-        padding: 25px 0px;
+        padding: 30px 0px;
         width: 70%;
     } 
 
-    @media (max-width: 320px) {
+    @media (max-width: 360px) {
         width: 100%;
     } 
 `;
