@@ -23,7 +23,7 @@ export const StyledHeader = styled.header`
     position: fixed;
     top: 0;
     z-index: 1000;
-    background-color: ${props => (props.$isColoring ? "#fff" : "transparent")};;
+    background-color: ${props => (props.$isColoring ? "#fff" : "transparent")};
     color: ${props => (props.$isColoring || props.$isOpen ? "#252525" : "#fff")};
 
     .hamburger-menu {
@@ -144,6 +144,7 @@ export const NavList = styled.ul`
     li {
         font-size: 28px;
         transition: 0.4s;
+        white-space: nowrap;
         cursor: pointer;
 
         &:hover {
@@ -166,7 +167,7 @@ export const NavList = styled.ul`
             font-size: 20px;
         }
     }
-    
+
     @media (max-width: 768px) {
         display: ${props => (props.$isOpen ? "flex" : "none")};
         flex-direction: column;
@@ -176,27 +177,26 @@ export const NavList = styled.ul`
         width: 60%;
         height: 100%;
         padding: 25px 0px;
-        position: fixed; 
+        position: fixed;
         top: -16px;
         bottom: 0;
         right: 0;
         z-index: 999;
-        
+
         background-color: ${props => (props.$isOpen ? "#fff" : "transparent")};
         animation: ${props => (props.$isOpen ? fadeIn : "none")} 0.8s ease-in-out;
 
         li {
             font-size: 20px;
-            
-        } 
+        }
     }
 
     @media (max-width: 480px) {
         padding: 30px 0px;
         width: 70%;
-    } 
+    }
 
     @media (max-width: 360px) {
         width: 100%;
-    } 
+    }
 `;

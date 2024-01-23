@@ -7,7 +7,7 @@ import Home from "./views/Home";
 import AboutMe from "./views/AboutMe";
 
 const Container = styled.main`
-    background-color: ${props => (props.$isMenuOpen ? "rgba(0, 0, 0, 0.6)" : 1)};
+    opacity: ${props => (props.$isMenuOpen ? 0.6 : 1)};
 `;
 
 function App() {
