@@ -1,16 +1,8 @@
 import { useContext } from "react";
 import { LanguagesContext } from "../../context/contextLanguage";
 import { Title } from "../Home/styles";
-import styled, { keyframes } from "styled-components";
-
-const crawl = keyframes`
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(-100%);
-    }
-`;
+import styled from "styled-components";
+import ScrollText from "../../components/ScrollText";
 
 const Container = styled.section`
     background: linear-gradient(to bottom, #000000, #032552);
@@ -19,21 +11,6 @@ const Container = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-`;
-
-const ContainerText = styled.div`
-    width: 960px;
-    max-width: 90%;
-    max-height: 45vh;
-    display: flex;
-    flex-direction: column;
-`;
-
-const Text = styled.p`
-    color: #fff;
-    font-size: 2em;
-    display: inline-block;
-    animation: ${crawl} 70s linear infinite;
 `;
 
 const AboutMe = () => {
@@ -45,12 +22,7 @@ const AboutMe = () => {
     return (
         <Container id="aboutMe">
             <Title>{texts[language].about.title}</Title>
-
-            <ContainerText>
-                {paragraphs.map((txt, index) => (
-                    <Text key={index}>{txt}</Text>
-                ))}
-            </ContainerText>
+            <ScrollText paragraphs={paragraphs} />
         </Container>
     );
 };

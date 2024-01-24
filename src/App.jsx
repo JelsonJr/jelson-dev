@@ -6,6 +6,8 @@ import NavigationMenu from "./components/NavigationMenu";
 import Home from "./views/Home";
 import AboutMe from "./views/AboutMe";
 
+import "react-tooltip/dist/react-tooltip.css";
+
 const Container = styled.main`
     opacity: ${props => (props.$isMenuOpen ? 0.6 : 1)};
 `;
