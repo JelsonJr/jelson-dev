@@ -23,6 +23,7 @@ export const StyledHeader = styled.header`
     position: fixed;
     top: 0;
     z-index: 1000;
+    transition: 0.4s;
     background-color: ${props => (props.$isColoring ? "#fff" : "transparent")};
     color: ${props => (props.$isColoring || props.$isOpen ? "#252525" : "#fff")};
 

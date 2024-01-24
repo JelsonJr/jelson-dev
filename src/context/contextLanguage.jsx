@@ -1,6 +1,5 @@
 import { createContext, useEffect, useState } from "react";
 import PropTypes from "prop-types";
-
 import texts from "../mocks/texts.json";
 
 export const LanguagesContext = createContext();
