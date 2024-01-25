@@ -22,6 +22,7 @@ function App() {
             <Container $isMenuOpen={isMenuOpen}>
                 <Home />
                 <AboutMe />
+                <></>
             </Container>
         </LanguagesProvider>
     );

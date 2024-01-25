@@ -8,10 +8,7 @@ const ScrollText = ({ paragraphs }) => {
     const { texts, language } = useContext(LanguagesContext);
     const [viewText, setViewText] = useState(false);
 
-    const handleUpdateText = () => {
-        console.log(texts[language].tips.scrollText[viewText]);
-        setViewText(!viewText);
-    };
+    const handleUpdateText = () => setViewText(!viewText);
 
     return (
         <MainContainer>
@@ -35,8 +32,6 @@ const ScrollText = ({ paragraphs }) => {
     );
 };
 
-ScrollText.propTypes = {
-    paragraphs: PropTypes.array.isRequired,
-};
+ScrollText.propTypes = { paragraphs: PropTypes.array.isRequired };
 
 export default ScrollText;

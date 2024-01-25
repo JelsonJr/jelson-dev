@@ -15,6 +15,15 @@ export const MainContainer = styled.div`
     width: 90%;
     height: 70%;
     overflow: hidden;
+
+    #tipText {
+        background-color: #fff;
+        color: #000; 
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
 `;
 
 export const StyledSection = styled.section`
@@ -23,6 +32,10 @@ export const StyledSection = styled.section`
     position: relative;
     height: ${props => (props.$viewText ? "" : "800px")};
     perspective: ${props => (props.$viewText ? "0" : "400px")};
+
+    @media (max-width: 1250px) {
+        height: ${props => (props.$viewText ? "" : "600px")};
+    }
 `;
 
 export const Fade = styled.div`
@@ -40,15 +53,28 @@ export const Container = styled.div`
         props.$viewText
             ? css``
             : css`
-                  ${starwars} 80s linear infinite
+                  ${starwars} 20s linear infinite
               `};
     cursor: pointer;
 `;
 
+// cubic-bezier(0.2,-2,0.8,2)
 export const Text = styled.p`
     color: #feda4a;
     font-size: ${props => (props.$viewText ? "1.5em" : "2em")};
     letter-spacing: ${props => (props.$viewText ? "3px" : "5px")};
     line-height: 200%;
     text-align: ${props => (props.$viewText ? "justify" : "center")};
+    hyphens: auto;
+
+    @media (max-width: 768px) {
+        font-size: ${props => (props.$viewText ? "1.3em" : "1.5em")};
+        letter-spacing: 2px;
+    }
+
+    @media (max-width: 480px) {
+        font-size: ${props => (props.$viewText ? "1em" : "1.3em")};
+        letter-spacing: 1px;
+        text-align: justify;
+    }
 `;

@@ -37,7 +37,7 @@ export const Title = styled.h1`
             2px -2px 0 #ffd700,
             -2px 2px 0 #ffd700,
             2px 2px 0 #ffd700;
-        font-size: 1.3em;
+        font-size: 1.5em;
     }
 
     @media (max-width: 375px) {
@@ -46,7 +46,7 @@ export const Title = styled.h1`
             1.4px -1.4px 0 #ffd700,
             -1.4px 1.4px 0 #ffd700,
             1.4px 2px 0 #ffd700;
-        font-size: 1em;
+        font-size: 1.3em;
     }
 `;
 
