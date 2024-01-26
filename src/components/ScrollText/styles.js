@@ -18,7 +18,7 @@ export const MainContainer = styled.div`
 
     #tipText {
         background-color: #fff;
-        color: #000; 
+        color: #000;
 
         @media (max-width: 768px) {
             display: none;
@@ -58,7 +58,6 @@ export const Container = styled.div`
     cursor: pointer;
 `;
 
-// cubic-bezier(0.2,-2,0.8,2)
 export const Text = styled.p`
     color: #feda4a;
     font-size: ${props => (props.$viewText ? "1.5em" : "2em")};
