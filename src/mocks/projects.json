@@ -1,7 +1,37 @@
 [
     {
-        "nome": "MPC",
-        "linkGithub": "https://github/JelsonJr",
-        "imagem": "../public/assets/images/projeto_1"
+        "name": "jelson dev",
+        "linkGithub": "https://github.com/JelsonJr?tab=repositories",
+        "description": "toca músicas feito em C com a biblioteca allegro 5.",
+        "image": "src/assets/images/background.jpg",
+        "alt": ""
+    },
+    {
+        "name": "mpc",
+        "linkGithub": "https://github.com/JelsonJr?tab=repositories",
+        "description": "toca músicas feito em C com a biblioteca allegro 5.",
+        "image": "src/assets/images/background.jpg",
+        "alt": ""
+    },
+    {
+        "name": "MPC",
+        "linkGithub": "https://github.com/JelsonJr?tab=repositories",
+        "description": "toca músicas feito em C com a biblioteca allegro 5.",
+        "image": "src/assets/images/background.jpg",
+        "alt": ""
+    },
+    {
+        "name": "MPC",
+        "linkGithub": "https://github.com/JelsonJr?tab=repositories",
+        "description": "toca músicas feito em C com a biblioteca allegro 5.",
+        "image": "src/assets/images/background.jpg",
+        "alt": ""
+    },
+    {
+        "name": "MPC",
+        "linkGithub": "https://github.com/JelsonJr?tab=repositories",
+        "description": "toca músicas feito em C com a biblioteca allegro 5.",
+        "image": "src/assets/images/background.jpg",
+        "alt": ""
     }
 ]

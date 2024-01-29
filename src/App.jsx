@@ -8,6 +8,7 @@ import Home from "./views/Home";
 import AboutMe from "./views/AboutMe";
 import ErrorPage from "./views/ErrorPage";
 import "react-tooltip/dist/react-tooltip.css";
+import MyProjects from "./views/MyProjects";
 
 const Container = styled.main`
     opacity: ${props => (props.$isMenuOpen ? 0.6 : 1)};
@@ -29,6 +30,7 @@ function App() {
                                 <Container $isMenuOpen={isMenuOpen}>
                                     <Home />
                                     <AboutMe />
+                                    <MyProjects />
                                 </Container>
                             </>
                         }
