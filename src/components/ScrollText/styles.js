@@ -53,9 +53,18 @@ export const Container = styled.div`
         props.$viewText
             ? css``
             : css`
-                  ${starwars} 20s linear infinite
+                  ${starwars} 26.3s cubic-bezier(.05,.21,.75,.82) infinite
               `};
     cursor: pointer;
+
+    @media (max-width: 480px) {
+        animation: ${props =>
+        props.$viewText
+            ? css``
+            : css`
+                  ${starwars} 27.5s cubic-bezier(.05,.21,.75,.82) infinite
+              `};
+    }
 `;
 
 export const Text = styled.p`

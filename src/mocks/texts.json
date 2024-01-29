@@ -13,8 +13,14 @@
         },
         "about": {
             "title": "about me",
-            "description": "welcome, masters, knights, and padawans of this galaxy (and others as well). my name is jelson, and I am the creator of this website. I am 19 years old, a student of software engineering at uepg, and also a junior programmer. in addition to technology and programming, I am also a fan of games, series, movies, and books. \nI created this site to showcase a bit of my work, contact information, and future projects. nothing on this site is by chance, it was developed with professionalism, care, and a lot of affection. the theme is a tribute to a classic saga that was very impactful in my life and led me to delve even deeper into geek/nerd culture. \nperhaps you don't know everything about me here, so be sure to check out my social networks. if you are interested in developing a software project, don't hesitate to get in touch to assess feasibility and prices. \nsee you soon, and may the force be with you!",
+            "description": "Welcome, masters, knights, and padawans of this galaxy (and others too). My name is Jelson, and I am the creator of this website. I am 19 years old, a software engineering student at UEPG, and also a junior programmer. In addition to technology and programming, I am also a fan of games, series, movies, and books. \nI created this site to showcase some of my work, contact information, and future projects. Inspired by the classic saga of George Lucas, I decided to pay tribute to this masterpiece, which is one of the most important works in the history of cinema and in my life. \nIf you are interested in developing software, don't hesitate to get in touch! See you soon, and may the Force be with you!",
             "end": "end"
+        },
+        "errorPage": {
+            "title": "error 404: it's over, i have the high ground.",
+            "click": "click",
+            "here": "here",
+            "return": "to return"
         },
         "audio": "./audioen.mp3",
         "tips": {
@@ -38,8 +44,14 @@
         },
         "about": {
             "title": "sobre mim",
-            "description": "bem-vindos, mestres, cavaleiros e padawans dessa galáxia (e de outras também). me chamo jelson e sou o criador deste website. tenho 19 anos, sou estudante de engenharia de software na uepg e também sou programador júnior. além da tecnologia e programação, também sou fã de games, séries, filmes e livros. \ncriei este site para divulgar um pouco do meu trabalho, contato e futuros projetos. nada neste site é por acaso, ele foi desenvolvido com profissionalismo, cuidado e muito carinho. a temática é uma homenagem a uma saga clássica que foi muito marcante na minha vida e fez com que eu me aprofundasse ainda mais na cultura geek/nerd. \ntalvez você não saiba tudo sobre mim por aqui, por isso não deixe de conferir minhas redes sociais. caso você tenha interesse em desenvolver um projeto de software, não deixe de entrar em contato para verificar viabilidade e preços. \naté breve, e que a força esteja com você!",
+            "description": "bem-vindos, mestres, cavaleiros e padawans dessa galáxia (e de outras também). me chamo jelson e sou o criador deste website. tenho 19 anos, sou estudante de engenharia de software na uepg e também sou programador júnior. além da tecnologia e programação, também sou fã de games, séries, filmes e livros. \ncriei este site para divulgar um pouco do meu trabalho, contato e futuros projetos. inspirado na saga clássica de George Lucas, resolvi homenagear essa que é uma das obras mais importantes da história do cinema e da minha vida. \ncaso tenha interesse em desenvolver um software, não deixe de entrar em contato! até breve, e que a força esteja com você!",
             "end": "end"
+        },
+        "errorPage": {
+            "title": "error 404: acabou, eu estou em terreno firme.",
+            "click": "clique",
+            "here": "aqui",
+            "return": "para retornar"
         },
         "audio": "./audioptbr.mp3",
         "tips": {
