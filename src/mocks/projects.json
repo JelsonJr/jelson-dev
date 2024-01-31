@@ -1,37 +1,16 @@
 [
     {
         "name": "jelson dev",
-        "linkGithub": "https://github.com/JelsonJr?tab=repositories",
-        "description": "toca músicas feito em C com a biblioteca allegro 5.",
+        "linkGithub": "https://github.com/JelsonJr/jelson-dev",
+        "description": "site que fiz para divulgar meu trabalho e futuros projetos de software.",
         "image": "src/assets/images/background.jpg",
-        "alt": ""
-    },
-    {
-        "name": "mpc",
-        "linkGithub": "https://github.com/JelsonJr?tab=repositories",
-        "description": "toca músicas feito em C com a biblioteca allegro 5.",
-        "image": "src/assets/images/background.jpg",
-        "alt": ""
+        "alt": "imagem da estrela da morte em um céu azulado, representando o projeto."
     },
     {
         "name": "MPC",
-        "linkGithub": "https://github.com/JelsonJr?tab=repositories",
+        "linkGithub": "https://github.com/JelsonJr/MP3-C",
         "description": "toca músicas feito em C com a biblioteca allegro 5.",
-        "image": "src/assets/images/background.jpg",
-        "alt": ""
-    },
-    {
-        "name": "MPC",
-        "linkGithub": "https://github.com/JelsonJr?tab=repositories",
-        "description": "toca músicas feito em C com a biblioteca allegro 5.",
-        "image": "src/assets/images/background.jpg",
-        "alt": ""
-    },
-    {
-        "name": "MPC",
-        "linkGithub": "https://github.com/JelsonJr?tab=repositories",
-        "description": "toca músicas feito em C com a biblioteca allegro 5.",
-        "image": "src/assets/images/background.jpg",
-        "alt": ""
+        "image": "src/assets/images/musicSymbol.jpg",
+        "alt": "logos laranjados de simbolos musicais"
     }
 ]

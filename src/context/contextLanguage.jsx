@@ -14,7 +14,7 @@ export const LanguagesProvider = ({ children }) => {
         setLanguage(userLanguage);
     }, []);
 
-    return <LanguagesContext.Provider value={{ language, setLanguage, texts }}>{children}</LanguagesContext.Provider>;
+    return <LanguagesContext.Provider value={{ language, texts, setLanguage }}>{children}</LanguagesContext.Provider>;
 };
 
 LanguagesProvider.propTypes = { children: PropTypes.node.isRequired };

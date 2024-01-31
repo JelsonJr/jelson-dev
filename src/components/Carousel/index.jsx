@@ -1,39 +1,7 @@
-import styled from "styled-components";
 import PropTypes from "prop-types";
 import Item from "./Item";
 import { useRef } from "react";
-
-const Container = styled.div`
-    max-width: 75vw;
-`;
-
-const CarouselDiv = styled.div`
-    display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-
-    &::-webkit-scrollbar {
-        display: none;
-    }
-`;
-
-const Buttons = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-`;
-
-const Button = styled.button`
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-
-    svg {
-        path {
-            fill: #fff;
-        }
-    }
-`;
+import { Button, Buttons, CarouselDiv, Container } from "./styles";
 
 const Carousel = ({ items }) => {
     const carousel = useRef(null);

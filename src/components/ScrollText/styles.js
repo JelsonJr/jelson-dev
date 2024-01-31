@@ -59,11 +59,11 @@ export const Container = styled.div`
 
     @media (max-width: 480px) {
         animation: ${props =>
-        props.$viewText
-            ? css``
-            : css`
-                  ${starwars} 27.5s cubic-bezier(.05,.21,.75,.82) infinite
-              `};
+            props.$viewText
+                ? css``
+                : css`
+                      ${starwars} 27.5s cubic-bezier(.05,.21,.75,.82) infinite
+                  `};
     }
 `;
 
