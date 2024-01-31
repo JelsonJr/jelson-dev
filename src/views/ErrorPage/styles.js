@@ -39,7 +39,7 @@ export const Title = styled.h1`
             color: gray;
         }
 
-       &:last-child {
+        &:last-child {
             color: #830100;
             text-shadow: 0 0 10px rgba(181, 0, 0, 0.8);
         }
