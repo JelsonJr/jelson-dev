@@ -92,6 +92,14 @@ export const StyledHeader = styled.header`
             }
         }
     }
+
+    @media (max-width: 768px) {
+        height: 115px;   
+    }
+
+    @media (max-width: 480px) {
+        height: 90px;   
+    }
 `;
 
 export const Logo = styled.div`

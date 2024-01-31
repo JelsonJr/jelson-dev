@@ -8,6 +8,7 @@ import Home from "./views/Home";
 import AboutMe from "./views/AboutMe";
 import ErrorPage from "./views/ErrorPage";
 import MyProjects from "./views/MyProjects";
+import Contact from "./views/Contact";
 import "react-tooltip/dist/react-tooltip.css";
 
 const Container = styled.main`
@@ -31,6 +32,7 @@ function App() {
                                     <Home />
                                     <AboutMe />
                                     <MyProjects />
+                                    <Contact />
                                 </Container>
                             </>
                         }
