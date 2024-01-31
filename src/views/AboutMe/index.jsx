@@ -1,8 +1,8 @@
 import { useContext } from "react";
 import { LanguagesContext } from "../../context/contextLanguage";
-import { Title } from "../Home/styles";
 import styled from "styled-components";
 import ScrollText from "../../components/ScrollText";
+import { Title } from "../../components/Title";
 
 const Container = styled.section`
     background: linear-gradient(to bottom, #000000, #032552);

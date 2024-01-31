@@ -22,7 +22,7 @@
             "here": "here",
             "return": "to return"
         },
-        "audio": "./audioen.mp3",
+        "audio": "src/assets/audio/mayTheForceBeWithYou.mp3",
         "tips": {
             "scrollText": {
                 "true": "Click to return the animation.",
@@ -53,7 +53,7 @@
             "here": "aqui",
             "return": "para retornar"
         },
-        "audio": "./audioptbr.mp3",
+        "audio": "src/assets/audio/mayTheForceBeWithYou.mp3",
         "tips": {
             "scrollText": {
                 "true": "Clique para retornar a animação.",

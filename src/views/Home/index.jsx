@@ -1,12 +1,13 @@
-import React, { useContext, useState } from "react";
+import { useContext, useRef, useState } from "react";
 import { LanguagesContext } from "../../context/contextLanguage";
-import { Container, Force, Title } from "./styles";
+import { Container, Force } from "./styles";
+import { Title } from "../../components/Title";
 
 const Home = () => {
     const { texts, language } = useContext(LanguagesContext);
     const [isAudioPlaying, setAudioPlaying] = useState(false);
 
-    const audioRef = React.createRef();
+    const audioRef = useRef();
 
     const playAudio = () => {
         if (isAudioPlaying) {
@@ -14,13 +15,12 @@ const Home = () => {
         } else {
             audioRef.current.play();
         }
-
         setAudioPlaying(!isAudioPlaying);
     };
 
     return (
         <Container id="home">
-            <Title onClick={playAudio}>
+            <Title $pointer={true} onClick={playAudio}>
                 {texts[language].header.title} <Force>{texts[language].header.force}</Force> {texts[language].header.restOfTitle}
             </Title>
             <audio ref={audioRef} src={texts[language].audio} />
