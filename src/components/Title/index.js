@@ -10,8 +10,8 @@ export const Title = styled.h1`
         -3px 3px 0 #ffd700,
         3px 3px 0 #ffd700;
 
-    cursor: ${props => props.$pointer ? "pointer" : "normal"};
-    
+    cursor: ${props => (props.$pointer ? "pointer" : "normal")};
+
     @media (max-width: 960px) {
         font-size: 2.5em;
     }

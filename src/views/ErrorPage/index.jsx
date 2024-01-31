@@ -8,7 +8,10 @@ const ErrorPage = () => {
     return (
         <Container>
             <ContainerMessage>
-                <Title>{texts[language].errorPage.title}</Title>
+                <Title>
+                    <span>{texts[language].errorPage.error}</span>
+                    <span>{texts[language].errorPage.description}</span>
+                </Title>
                 <Text>
                     {texts[language].errorPage.click}
                     <StyledLink to="/">{texts[language].errorPage.here}</StyledLink>

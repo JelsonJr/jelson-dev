@@ -17,7 +17,8 @@
             "end": "end"
         },
         "errorPage": {
-            "title": "error 404: it's over, i have the high ground.",
+            "error": "error 404: ",
+            "description": "it's over, i have the high ground.",
             "click": "click",
             "here": "here",
             "return": "to return"
@@ -48,7 +49,8 @@
             "end": "end"
         },
         "errorPage": {
-            "title": "error 404: acabou, eu estou em terreno firme.",
+            "error": "erro 404: ",
+            "description": "acabou, eu estou em terreno firme.",
             "click": "clique",
             "here": "aqui",
             "return": "para retornar"

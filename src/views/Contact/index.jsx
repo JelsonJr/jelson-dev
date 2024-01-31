@@ -13,7 +13,7 @@ const Container = styled.section`
 const CardsContainer = styled.div`
     display: grid;
     grid-template-columns: repeat(4, minmax(200px, 1fr));
-    gap: 16px;
+    gap: 32px;
     max-width: 1200px;
     margin: 0 auto;
 `;
