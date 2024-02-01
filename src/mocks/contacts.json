@@ -1,22 +1,30 @@
 [
     {
         "title": "whatsapp",
-        "buttonText": "",
-        "contact": "+55 42 99136-1180"
+        "contact": "+55 42 99136-1180",
+        "background": "src/assets/images/cards/fa-endor.png",
+        "alt": "wallpaper endor",
+        "icon": "src/mocks/github.svg"
     },
     {
         "title": "instagram",
-        "buttonText": "",
-        "contact": "@rodrigues_jelsonjr"
+        "contact": "@rodrigues_jelsonjr",
+        "background": "src/assets/images/cards/fa-mustafar.png",
+        "alt": "wallpaper mustafar",
+        "icon": "src/mocks/instagram.svg"
     },
     {
         "title": "linkedin",
-        "buttonText": "",
-        "contact": "Jelson Rodrigues"
+        "contact": "Jelson Rodrigues",
+        "background": "src/assets/images/cards/fa-hoth.png",
+        "alt": "wallpaper hoth",
+        "icon": "src/mocks/linkedin.svg"
     },
     {
         "title": "github",
-        "buttonText": "",
-        "contact": "JelsonJr"
+        "contact": "JelsonJr",
+        "background": "src/assets/images/cards/fa-tatooine.png",
+        "alt": "wallpaper tatooine",
+        "icon": "src/mocks/github.svg"
     }
 ]

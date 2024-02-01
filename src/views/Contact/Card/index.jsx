@@ -1,13 +1,14 @@
-import { Container, StyledButton, StyledDiv } from "./styles";
+import { Container, StyledDiv } from "./styles";
 import PropTypes from "prop-types";
 
-const Card = ({ title, buttonText, contact }) => {
+const Card = ({ title, contact, background, alt, icon }) => {
     return (
         <Container>
             <h2>{title}</h2>
-            <StyledButton>{buttonText}</StyledButton>
+            <img src={background} alt={alt} />
+            {/* <img src={icon} alt="Icon" id="icon" /> */}
             <StyledDiv>
-                <p>{contact}</p>
+                <button>{contact}</button>
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
@@ -32,6 +33,9 @@ Card.propTypes = {
     title: PropTypes.string.isRequired,
     buttonText: PropTypes.string.isRequired,
     contact: PropTypes.string.isRequired,
+    background: PropTypes.string.isRequired,
+    alt: PropTypes.string.isRequired,
+    icon: PropTypes.string.isRequired,
 };
 
 export default Card;
