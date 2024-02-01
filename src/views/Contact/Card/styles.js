@@ -33,10 +33,10 @@ export const Container = styled.div`
     }
 
     h2 {
-        position: absolute; 
-        top: 0; 
-        left: 0; 
-        z-index: 1; 
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
         margin: 0;
         padding: 10px;
     }
@@ -46,7 +46,8 @@ export const Container = styled.div`
         height: 600px;
 
         button,
-        div, #iconContainer {
+        div,
+        #iconContainer {
             opacity: 1;
         }
 
@@ -57,14 +58,13 @@ export const Container = styled.div`
 `;
 
 export const StyledDiv = styled.div`
-    position: absolute; 
+    position: absolute;
     top: 85%;
     display: flex;
     align-items: center;
     gap: 20px;
     border-radius: 20px;
     padding: 0 10px;
-    background-color: #032552;
     opacity: 0;
 
     button {
@@ -72,18 +72,17 @@ export const StyledDiv = styled.div`
         font-size: 1.5em;
         font-weight: 500;
         color: #fff;
-        background-color: transparent;
+        background-color: #032552;
         border: none;
-        padding: 10px 15px;
+        border-radius: 20px;
+        padding: 10px 12px;
 
         &:hover {
             cursor: pointer;
         }
-    }
 
-    svg {
-        &:hover {
-            cursor: pointer;
+        &:last-child {
+            border-radius: 10px;
         }
     }
 

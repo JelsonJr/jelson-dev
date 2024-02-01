@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
+    position: relative;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     height: 100vh;
@@ -10,9 +10,12 @@ export const Container = styled.section`
 `;
 
 export const CardsContainer = styled.div`
-    display: grid;
-    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    position: absolute;
+    top: 20%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 32px;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
 `;
