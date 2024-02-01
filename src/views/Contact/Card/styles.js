@@ -21,6 +21,17 @@ export const Container = styled.div`
         object-fit: cover;
     }
 
+    #iconContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        width: 30%;
+        opacity: 0;
+    }
+
     h2 {
         position: absolute; 
         top: 0; 
@@ -35,7 +46,7 @@ export const Container = styled.div`
         height: 600px;
 
         button,
-        div {
+        div, #iconContainer {
             opacity: 1;
         }
 

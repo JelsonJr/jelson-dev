@@ -4,27 +4,27 @@
         "contact": "+55 42 99136-1180",
         "background": "src/assets/images/cards/fa-endor.png",
         "alt": "wallpaper endor",
-        "icon": "src/mocks/github.svg"
+        "icon": "src/assets/images/cards/svgs/whatsapp.svg"
     },
     {
         "title": "instagram",
         "contact": "@rodrigues_jelsonjr",
         "background": "src/assets/images/cards/fa-mustafar.png",
         "alt": "wallpaper mustafar",
-        "icon": "src/mocks/instagram.svg"
+        "icon": "src/assets/images/cards/svgs/instagram.svg"
     },
     {
         "title": "linkedin",
         "contact": "Jelson Rodrigues",
         "background": "src/assets/images/cards/fa-hoth.png",
         "alt": "wallpaper hoth",
-        "icon": "src/mocks/linkedin.svg"
+        "icon": "src/assets/images/cards/svgs/linkedin.svg"
     },
     {
         "title": "github",
         "contact": "JelsonJr",
         "background": "src/assets/images/cards/fa-tatooine.png",
         "alt": "wallpaper tatooine",
-        "icon": "src/mocks/github.svg"
+        "icon": "src/assets/images/cards/svgs/github.svg"
     }
 ]

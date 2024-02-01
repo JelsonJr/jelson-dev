@@ -6,7 +6,9 @@ const Card = ({ title, contact, background, alt, icon }) => {
         <Container>
             <h2>{title}</h2>
             <img src={background} alt={alt} />
-            {/* <img src={icon} alt="Icon" id="icon" /> */}
+            <div id="iconContainer">
+                <img src={icon} alt="Icon" />
+            </div>
             <StyledDiv>
                 <button>{contact}</button>
                 <svg
@@ -28,7 +30,7 @@ const Card = ({ title, contact, background, alt, icon }) => {
         </Container>
     );
 };
-
+//ajeitar posicao dos icons, separar botoes, ajustar posicao fixa dos cards na tela e ajustar responsividade
 Card.propTypes = {
     title: PropTypes.string.isRequired,
     buttonText: PropTypes.string.isRequired,
