@@ -32,7 +32,7 @@ const Card = ({ title, contact, background, alt, icon }) => {
         </Container>
     );
 };
-//ajeitar posicao dos icons, separar botoes, ajustar posicao fixa dos cards na tela e ajustar responsividade
+//ajeitar posicao dos icons e ajustar responsividade
 Card.propTypes = {
     title: PropTypes.string.isRequired,
     contact: PropTypes.string.isRequired,

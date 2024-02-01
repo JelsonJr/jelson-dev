@@ -5,8 +5,16 @@ export const Container = styled.section`
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    height: 90vh;
     background: linear-gradient(to bottom, #031449, #034dae);
+
+    @media (max-width: 1144px) {
+        height: 100vh;
+    }
+
+    @media (max-width: 480px) {
+        height: 112vh;
+    }
 `;
 
 export const CardsContainer = styled.div`
@@ -15,7 +23,17 @@ export const CardsContainer = styled.div`
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 32px;
-    max-width: 1400px;
+    gap: 10px;
+    width: 1400px;
+    max-width: 90%;
     margin: 0 auto;
+
+    @media (max-width: 1012px) {
+        top: 15%;
+    }
+
+    @media (max-width: 768px) {
+        top: 8%;
+    }
+
 `;

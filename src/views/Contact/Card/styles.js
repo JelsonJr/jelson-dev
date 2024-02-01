@@ -9,6 +9,7 @@ export const Container = styled.div`
     width: 300px;
     height: 100px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
     transition:
         box-shadow 0.3s ease,
         height 0.5s ease,
@@ -54,6 +55,22 @@ export const Container = styled.div`
         h2 {
             color: #fff;
         }
+
+        @media (max-width: 1144px) {
+            height: 575px;
+        }
+    }
+
+    @media (max-width: 1366px) {
+        width: 270px;
+    }
+
+    @media (max-width: 1233px) {
+        width: 250px;
+    }
+
+    @media (max-width: 1144px) {
+        width: 350px;
     }
 `;
 
@@ -83,6 +100,19 @@ export const StyledDiv = styled.div`
 
         &:last-child {
             border-radius: 10px;
+        }
+    }
+
+    @media (max-width: 1366px) {
+        button {
+            font-size: 1.2em;
+        }
+    }
+
+    @media (max-width: 1012px) {
+        button {
+            font-size: 1.2em;
+            padding: 6px 8px;
         }
     }
 
