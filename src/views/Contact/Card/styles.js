@@ -59,6 +59,10 @@ export const Container = styled.div`
         @media (max-width: 1144px) {
             height: 575px;
         }
+
+        @media (max-width: 768px) {
+            height: 550px;
+        }
     }
 
     @media (max-width: 1366px) {
@@ -72,6 +76,10 @@ export const Container = styled.div`
     @media (max-width: 1144px) {
         width: 350px;
     }
+
+    @media (max-width: 768px) {
+        width: 300px;
+    }
 `;
 
 export const StyledDiv = styled.div`
@@ -83,12 +91,13 @@ export const StyledDiv = styled.div`
     border-radius: 20px;
     padding: 0 10px;
     opacity: 0;
-
-    button {
+    
+    a {
+        text-decoration: none;
+        color: #fff;
         font-family: monospace;
         font-size: 1.5em;
         font-weight: 500;
-        color: #fff;
         background-color: #032552;
         border: none;
         border-radius: 20px;
@@ -97,9 +106,19 @@ export const StyledDiv = styled.div`
         &:hover {
             cursor: pointer;
         }
+    }
 
-        &:last-child {
-            border-radius: 10px;
+    button {
+        font-family: monospace;
+        font-size: 1.5em;
+        font-weight: 500;
+        border-radius: 10px;
+        background-color: #032552;
+        border: none;
+        padding: 10px 12px;
+
+        &:hover {
+            cursor: pointer;
         }
     }
 
@@ -111,7 +130,6 @@ export const StyledDiv = styled.div`
 
     @media (max-width: 1012px) {
         button {
-            font-size: 1.2em;
             padding: 6px 8px;
         }
     }

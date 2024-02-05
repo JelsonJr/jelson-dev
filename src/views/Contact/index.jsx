@@ -8,8 +8,8 @@ const Contact = () => {
         <Container id="contact">
             <Title>contato</Title>
             <CardsContainer>
-                {Contacts.map(({ title, contact, background, alt, icon }, idx) => (
-                    <Card key={idx} icon={icon} title={title} contact={contact} alt={alt} background={background} />
+                {Contacts.map(({ title, contact, background, alt, icon, link }, idx) => (
+                    <Card key={idx} icon={icon} title={title} link={link} contact={contact} alt={alt} background={background} />
                 ))}
             </CardsContainer>
         </Container>

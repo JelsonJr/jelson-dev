@@ -4,27 +4,31 @@
         "contact": "+55 42 99136-1180",
         "background": "src/assets/images/cards/fa-endor.png",
         "alt": "wallpaper endor",
-        "icon": "src/assets/images/cards/svgs/whatsapp.svg"
+        "icon": "src/assets/images/cards/svgs/whatsapp.svg",
+        "link": "https://wa.me/5542991361180"
     },
     {
         "title": "instagram",
         "contact": "@rodrigues_jelsonjr",
         "background": "src/assets/images/cards/fa-mustafar.png",
         "alt": "wallpaper mustafar",
-        "icon": "src/assets/images/cards/svgs/instagram.svg"
+        "icon": "src/assets/images/cards/svgs/instagram.svg",
+        "link": "https://www.instagram.com/rodrigues_jelsonjr"
     },
     {
         "title": "linkedin",
         "contact": "Jelson Rodrigues",
         "background": "src/assets/images/cards/fa-hoth.png",
         "alt": "wallpaper hoth",
-        "icon": "src/assets/images/cards/svgs/linkedin.svg"
+        "icon": "src/assets/images/cards/svgs/linkedin.svg",
+        "link": "https://www.linkedin.com/in/jelson-rodrigues-53333a229?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
     },
     {
         "title": "github",
         "contact": "JelsonJr",
         "background": "src/assets/images/cards/fa-tatooine.png",
         "alt": "wallpaper tatooine",
-        "icon": "src/assets/images/cards/svgs/github.svg"
+        "icon": "src/assets/images/cards/svgs/github.svg",
+        "link": "https://github.com/JelsonJr"
     }
 ]

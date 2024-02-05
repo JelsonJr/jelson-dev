@@ -9,6 +9,8 @@ import AboutMe from "./views/AboutMe";
 import ErrorPage from "./views/ErrorPage";
 import MyProjects from "./views/MyProjects";
 import Contact from "./views/Contact";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "react-tooltip/dist/react-tooltip.css";
 
 const Container = styled.main`
@@ -39,6 +41,18 @@ function App() {
                     />
                     <Route path="/*" element={<ErrorPage />} />
                 </Routes>
+                <ToastContainer
+                    position="bottom-center"
+                    autoClose={2500}
+                    hideProgressBar={true}
+                    newestOnTop={false}
+                    closeOnClick
+                    rtl={false}
+                    pauseOnFocusLoss
+                    draggable
+                    pauseOnHover
+                    theme="dark"
+                />
             </BrowserRouter>
         </LanguagesProvider>
     );

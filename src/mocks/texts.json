@@ -24,6 +24,7 @@
             "return": "to return"
         },
         "audio": "src/assets/audio/mayTheForceBeWithYou.mp3",
+        "copy": "copied to your clipboard!",
         "tips": {
             "scrollText": {
                 "true": "Click to return the animation.",
@@ -56,6 +57,7 @@
             "return": "para retornar"
         },
         "audio": "src/assets/audio/mayTheForceBeWithYou.mp3",
+        "copy": "Copiado para sua área de transferência!",
         "tips": {
             "scrollText": {
                 "true": "Clique para retornar a animação.",
