@@ -1,10 +1,28 @@
 import { createGlobalStyle } from "styled-components";
 import StarJedi from "./fonts/Starjedi.ttf";
+import Inter from "./fonts/Inter-SemiBold.ttf";
+import InterSemiBold from "./fonts/Inter-SemiBold.ttf";
+import InterBold from "./fonts/Inter-SemiBold.ttf";
 
 const GlobalStyles = createGlobalStyle`
 @font-face {
   font-family: 'StarJedi';
   src: local('Star Jedi'), local('StarJedi'), url(${StarJedi});
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: local('Inter'), local('Inter'), url(${Inter});
+}
+
+@font-face {
+  font-family: 'InterSemiBold';
+  src: local('Inter SemiBold'), local('InterSemiBold'), url(${InterSemiBold});
+}
+
+@font-face {
+  font-family: 'InterBold';
+  src: local('Inter Bold'), local('InterBold'), url(${InterBold});
 }
 
 html {

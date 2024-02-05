@@ -36,7 +36,8 @@
         "header": {
             "title": "que a",
             "force": "força",
-            "restOfTitle": "esteja com você!"
+            "restOfTitle": "esteja com você!",
+            "apresentation": "Olá, bem-vindo(a)! Estou animado em compartilhar meu mundo de programação e inovação com você! Aqui transformo ideias em códigos que não apenas funcionam, mas também elevam a experiência digital."
         },
         "nav": {
             "home": "inicio",

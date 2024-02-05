@@ -1,6 +1,6 @@
 import { useContext, useRef, useState } from "react";
 import { LanguagesContext } from "../../context/contextLanguage";
-import { Container, Force } from "./styles";
+import { Container, Force, TextContainer } from "./styles";
 import { Title } from "../../components/Title";
 
 const Home = () => {
@@ -10,11 +10,9 @@ const Home = () => {
     const audioRef = useRef();
 
     const playAudio = () => {
-        if (isAudioPlaying) {
-            audioRef.current.pause();
-        } else {
-            audioRef.current.play();
-        }
+        const playOrPause = isAudioPlaying ? "pause" : "play";
+        audioRef.current[playOrPause]();
+
         setAudioPlaying(!isAudioPlaying);
     };
 
@@ -23,6 +21,9 @@ const Home = () => {
             <Title $pointer={true} onClick={playAudio}>
                 {texts[language].header.title} <Force>{texts[language].header.force}</Force> {texts[language].header.restOfTitle}
             </Title>
+            <TextContainer>
+                <p>{texts[language].header.apresentation}</p>
+            </TextContainer>
             <audio ref={audioRef} src={texts[language].audio} />
         </Container>
     );

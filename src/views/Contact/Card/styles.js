@@ -27,8 +27,9 @@ export const Container = styled.div`
         align-items: center;
         justify-content: center;
         position: absolute;
-        top: 20%;
-        left: 20%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         width: 30%;
         opacity: 0;
     }
@@ -47,9 +48,12 @@ export const Container = styled.div`
         height: 600px;
 
         button,
-        div,
-        #iconContainer {
+        div {
             opacity: 1;
+        }
+
+        #iconContainer{
+            opacity: 0.75;
         }
 
         h2 {
@@ -91,7 +95,7 @@ export const StyledDiv = styled.div`
     border-radius: 20px;
     padding: 0 10px;
     opacity: 0;
-    
+
     a {
         text-decoration: none;
         color: #fff;
@@ -109,7 +113,7 @@ export const StyledDiv = styled.div`
     }
 
     button {
-        font-family: monospace;
+        font-family: "Inter";
         font-size: 1.5em;
         font-weight: 500;
         border-radius: 10px;
@@ -131,6 +135,14 @@ export const StyledDiv = styled.div`
     @media (max-width: 1012px) {
         button {
             padding: 6px 8px;
+            font-size: 1.3em;
+        }
+    }
+
+    @media (max-width: 400px) {
+        button {
+            padding: 6px 8px;
+            font-size: 1em;
         }
     }
 
