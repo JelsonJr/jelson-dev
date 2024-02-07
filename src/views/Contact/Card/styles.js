@@ -52,7 +52,7 @@ export const Container = styled.div`
             opacity: 1;
         }
 
-        #iconContainer{
+        #iconContainer {
             opacity: 0.75;
         }
 

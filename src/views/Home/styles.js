@@ -19,16 +19,13 @@ export const Force = styled.span`
 `;
 
 export const TextContainer = styled.div`
-    width: 1200px;
+    width: 950px;
     max-width: 90%;
-
+    
     p {
-        font-size: 1.5em;
+        font-size: 1.3em;
         font-family: "Inter";
         color: #fff;
-        text-align: justify;
-        padding: 10px;
-        border-radius: 10px;
-        background-color: rgba(0, 0, 0, 0.3);
+        text-align: center;
     }
-`
+`;

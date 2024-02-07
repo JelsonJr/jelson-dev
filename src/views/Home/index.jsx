@@ -23,6 +23,7 @@ const Home = () => {
             </Title>
             <TextContainer>
                 <p>{texts[language].header.apresentation}</p>
+                <p>Ofereço desenvolvimento Web, Desktop e Mobile, além de manutenção e integrações.</p>
             </TextContainer>
             <audio ref={audioRef} src={texts[language].audio} />
         </Container>

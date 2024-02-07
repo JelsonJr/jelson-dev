@@ -41,15 +41,18 @@ export const ProjectName = styled.span`
 export const ProjectDescription = styled.span`
     font-size: 0.8rem;
     flex-grow: 1;
+    font-family: "Inter";
 `;
 
 export const Link = styled.a`
+    font-family: "InterBold";
+    font-weight: bold;
     display: block;
     text-align: center;
     color: #1e1e1e;
     padding: 5px;
     border-radius: 10px;
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin-top: 10px;
     text-decoration: none;
     background-color: #feda4a;
