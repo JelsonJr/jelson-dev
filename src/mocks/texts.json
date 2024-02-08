@@ -25,7 +25,7 @@
             "here": "here",
             "return": "to return"
         },
-        "audio": "src/assets/audio/mayTheForceBeWithYou.mp3",
+        "audio": "src/public/assets/audio/mayTheForceBeWithYou.mp3",
         "copy": "copied to your clipboard!",
         "tips": {
             "scrollText": {
@@ -60,7 +60,7 @@
             "here": "aqui",
             "return": "para retornar"
         },
-        "audio": "src/assets/audio/mayTheForceBeWithYou.mp3",
+        "audio": "src/public/assets/audio/mayTheForceBeWithYou.mp3",
         "copy": "Copiado para sua área de transferência!",
         "tips": {
             "scrollText": {

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import BackgroundImage from "./errorImage.jpeg";
+import BackgroundImage from "/src/public/assets/images/backgrounds/errorImage.jpeg";
 
 export const Container = styled.section`
     min-height: 100vh;
