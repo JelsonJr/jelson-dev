@@ -15,7 +15,7 @@
         },
         "about": {
             "title": "about me",
-            "description": "Welcome, masters, knights, and padawans of this galaxy (and others too). My name is Jelson, and I am the creator of this website. I am 19 years old, a software engineering student at UEPG, and also a junior programmer. In addition to technology and programming, I am also a fan of games, series, movies, and books. \nI created this site to showcase some of my work, contact information, and future projects. Inspired by the classic saga of George Lucas, I decided to pay tribute to this masterpiece, which is one of the most important works in the history of cinema and in my life. \nIf you are interested in developing software, don't hesitate to get in touch! See you soon, and may the Force be with you!",
+            "description": "Welcome, masters, knights, and padawans of this galaxy (and others too). My name is Jelson, and I am the creator of this website. I am 19 years old, a software engineering student at UEPG, and also a junior programmer. In addition to technology and programming, I am also a fan of games, series, movies, and books. \nI created this site to showcase some of my work, contact information, and future projects. Inspired by the classic saga of George Lucas, I decided to pay tribute to this masterpiece, which is one of the most important works in the history of cinema and in my life. \nif you're interested in forming a partnership, initiating a project, or exploring collaboration opportunities, feel free to get in touch! until soon, and may the force be with you!",
             "end": "end"
         },
         "errorPage": {
@@ -50,7 +50,7 @@
         },
         "about": {
             "title": "sobre mim",
-            "description": "bem-vindos, mestres, cavaleiros e padawans dessa galáxia (e de outras também). me chamo jelson e sou o criador deste website. tenho 19 anos, sou estudante de engenharia de software na uepg e também sou programador júnior. além da tecnologia e programação, também sou fã de games, séries, filmes e livros. \ncriei este site para divulgar um pouco do meu trabalho, contato e futuros projetos. inspirado na saga clássica de George Lucas, resolvi homenagear essa que é uma das obras mais importantes da história do cinema e da minha vida. \nif you're interested in forming a partnership, initiating a project, or exploring collaboration opportunities, feel free to get in touch! Until soon, and may the force be with you!",
+            "description": "bem-vindos, mestres, cavaleiros e padawans dessa galáxia (e de outras também). me chamo jelson e sou o criador deste website. tenho 19 anos, sou estudante de engenharia de software na uepg e também sou programador júnior. além da tecnologia e programação, também sou fã de games, séries, filmes e livros. \ncriei este site para divulgar um pouco do meu trabalho, contato e futuros projetos. inspirado na saga clássica de George Lucas, resolvi homenagear essa que é uma das obras mais importantes da história do cinema e da minha vida. \n caso tenha interesse em uma parceria, iniciar um projeto ou divulgação, não deixe de entrar em contato! até breve, que a força esteja com você!",
             "end": "end"
         },
         "errorPage": {

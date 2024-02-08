@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import styled from "styled-components";
 import { LanguagesProvider } from "./context/contextLanguage";
 import GlobalStyles from "./components/GlobalStyles";
@@ -39,7 +39,8 @@ function App() {
                             </>
                         }
                     />
-                    <Route path="/*" element={<ErrorPage />} />
+                    <Route path="/*" element={<Navigate to="/error" />} />
+                    <Route path="/error" element={<ErrorPage />} />
                 </Routes>
                 <ToastContainer
                     position="bottom-center"
