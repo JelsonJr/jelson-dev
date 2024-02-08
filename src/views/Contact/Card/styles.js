@@ -43,6 +43,10 @@ export const Container = styled.div`
         padding: 10px;
     }
 
+    div, button {
+        display: none;
+    }
+
     &:hover {
         box-shadow: none;
         height: 600px;
@@ -50,6 +54,7 @@ export const Container = styled.div`
         button,
         div {
             opacity: 1;
+            display: flex;
         }
 
         #iconContainer {
@@ -89,7 +94,6 @@ export const Container = styled.div`
 export const StyledDiv = styled.div`
     position: absolute;
     top: 85%;
-    display: flex;
     align-items: center;
     gap: 20px;
     border-radius: 20px;
