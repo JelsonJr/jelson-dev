@@ -7,4 +7,4 @@ O site está disponível clicando [**_aqui_**](https://jelson-dev.vercel.app/)
 
 Não deixe de conferir meus outros projetos e que a força esteja com você! :)
 
-<img src="/assets/images/yoda.gif" alt="Mestre Yoda usando a força">
+![Alt Text](/public/assets/images/yoda.gif)
