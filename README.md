@@ -1,8 +1,8 @@
-# React + Vite
+# **JELSON-DEV**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Olá jovem padawan! Sou Jelson e este é o repositório do meu site. Sinta-se à vontade para vasculhar os segredos que este código esconde.
+Neste projeto, utilizei o Framework ***Vite***, a biblioteca ***React.js*** e também ***Styled Components***.
 
-Currently, two official plugins are available:
+O site está disponível clicando [***aqui***](https://jelson-dev.vercel.app/)
 
--   [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
--   [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Não deixe de conferir meus outros projetos e que a força esteja com você! :)
