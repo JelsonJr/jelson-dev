@@ -1,7 +1,7 @@
 import { useContext, useRef, useState } from "react";
-import { LanguagesContext } from "../../context/contextLanguage";
+import { LanguagesContext } from "context/contextLanguage";
 import { Container, Force, TextContainer } from "./styles";
-import { Title } from "../../components/Title";
+import { Title } from "components/Title";
 
 const Home = () => {
     const { texts, language } = useContext(LanguagesContext);

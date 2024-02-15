@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import Carousel from "../../components/Carousel";
-import Projects from "../../mocks/projects.json";
-import { Title } from "../../components/Title";
+import Carousel from "components/Carousel";
+import Projects from "mocks/projects.json";
+import { Title } from "components/Title";
 
 const Container = styled.section`
     display: flex;

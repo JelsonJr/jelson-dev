@@ -1,7 +1,7 @@
 import { Tooltip } from "react-tooltip";
 import PropTypes from "prop-types";
 import { useContext, useState } from "react";
-import { LanguagesContext } from "../../context/contextLanguage";
+import { LanguagesContext } from "context/contextLanguage";
 import { Container, Fade, MainContainer, StyledSection, Text } from "./styles";
 
 const ScrollText = ({ paragraphs }) => {

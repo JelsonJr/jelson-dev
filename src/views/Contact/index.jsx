@@ -1,7 +1,7 @@
-import { Title } from "../../components/Title";
+import { Title } from "components/Title";
 import { CardsContainer, Container } from "./styles";
 import Card from "./Card";
-import Contacts from "../../mocks/contacts.json";
+import Contacts from "mocks/contacts.json";
 
 const Contact = () => {
     return (

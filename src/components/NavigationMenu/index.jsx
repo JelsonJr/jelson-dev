@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import { StyledHeader, Logo, NavList } from "./styles";
-import { LanguagesContext } from "../../context/contextLanguage";
+import { LanguagesContext } from "context/contextLanguage";
 import PropTypes from "prop-types";
 
 const NavigationMenu = ({ isOpen, setIsOpen }) => {

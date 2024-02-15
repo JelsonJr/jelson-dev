@@ -32,6 +32,9 @@
                 "true": "Click to return the animation.",
                 "false": "Click to view the full text."
             }
+        },
+        "footer": {
+            "title": ""
         }
     },
     "pt-BR": {
@@ -67,6 +70,9 @@
                 "true": "Clique para retornar a animação.",
                 "false": "Clique para visualizar o texto completo."
             }
+        },
+        "footer": {
+            "title": "Teste de footer"
         }
     }
 }

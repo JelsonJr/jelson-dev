@@ -11,14 +11,14 @@ export const Container = styled.section`
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
+
     h1 {
         position: absolute;
         left: 2%;
         top: 25%;
     }
 
-    @media(max-width: 1268px) {
+    @media (max-width: 1268px) {
         h1 {
             position: inherit;
         }
@@ -34,9 +34,12 @@ export const TextContainer = styled.div`
     width: 950px;
     max-width: 90%;
     position: absolute;
-    left: 2%;
+    left: 1.3%;
     top: 40%;
-    
+    background-color: rgba(0, 0, 0, 0.15);
+    padding: 5px;
+    border-radius: 10px;
+
     p {
         font-size: 1.3em;
         font-family: "Inter";
@@ -46,31 +49,28 @@ export const TextContainer = styled.div`
         hyphens: auto;
     }
 
-    @media(max-width: 2000px) {
+    @media (max-width: 2000px) {
         width: 750px;
     }
 
-    @media(max-width: 1268px) {
+    @media (max-width: 1268px) {
         position: inherit;
         width: 950px;
-        background-color: rgba(0, 0, 0, 0.15);
-        padding: 5px;
-        border-radius: 10px;
     }
 
-    @media(max-width: 960px) {
+    @media (max-width: 960px) {
         p {
             font-size: 1.2em;
         }
     }
 
-    @media(max-width: 768px) {
+    @media (max-width: 768px) {
         p {
             font-size: 1.1em;
         }
     }
 
-    @media(max-width: 480px) {
+    @media (max-width: 480px) {
         p {
             font-size: 1em;
         }

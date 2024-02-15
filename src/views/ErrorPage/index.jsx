@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { LanguagesContext } from "../../context/contextLanguage";
+import { LanguagesContext } from "context/contextLanguage";
 import { Container, ContainerMessage, StyledLink, Text, Title } from "./styles";
 
 const ErrorPage = () => {

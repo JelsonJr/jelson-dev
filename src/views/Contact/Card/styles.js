@@ -43,7 +43,8 @@ export const Container = styled.div`
         padding: 10px;
     }
 
-    div, button {
+    div,
+    button {
         display: none;
     }
 

@@ -2,7 +2,7 @@ import { Container, StyledDiv } from "./styles";
 import { toast } from "react-toastify";
 import PropTypes from "prop-types";
 import { useContext, useState } from "react";
-import { LanguagesContext } from "../../../context/contextLanguage";
+import { LanguagesContext } from "context/contextLanguage";
 
 const Card = ({ title, contact, background, alt, icon, link }) => {
     const { texts, language } = useContext(LanguagesContext);
