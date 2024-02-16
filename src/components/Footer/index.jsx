@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Container, Title, TextsContainer, Text } from "./styles";
 import { LanguagesContext } from "context/contextLanguage";
+import Contacts from "./Contacts";
 
 const Footer = () => {
     const { texts, language } = useContext(LanguagesContext);
@@ -34,6 +35,7 @@ const Footer = () => {
                     <polyline points="17 18 12 13 7 18"></polyline>
                 </svg>
             </button>
+            <Contacts />
         </Container>
     );
 };

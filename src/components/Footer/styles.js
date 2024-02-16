@@ -3,9 +3,10 @@ import BackgroundImage from "/assets/images/backgrounds/stormtroopers.jpg";
 
 export const Container = styled.footer`
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    height: 400px;
+    justify-content: space-between;
+    gap: 50px;
     background-image: url(${BackgroundImage});
     background-repeat: repeat;
     background-size: contain;
