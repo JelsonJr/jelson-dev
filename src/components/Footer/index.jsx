@@ -1,14 +1,39 @@
 import { useContext } from "react";
-import { Container, Title } from "./styles";
+import { Container, Title, TextsContainer, Text } from "./styles";
 import { LanguagesContext } from "context/contextLanguage";
 
 const Footer = () => {
     const { texts, language } = useContext(LanguagesContext);
+    const [thais, otavio] = texts[language].footer.text.split("\n");
+
+    const backOnTop = () => document.getElementById("home")?.scrollIntoView({ behavior: "smooth" });
 
     return (
         <Container>
-            <Title>{texts[language].footer.title}</Title>
-            <img src="./assets/images/Mandalorian.png" />
+            <TextsContainer>
+                <Title>{texts[language].footer.title}</Title>
+                <div className="texts">
+                    <Text>{thais}</Text>
+                    <Text>{otavio}</Text>
+                </div>
+            </TextsContainer>
+            <button onClick={backOnTop}>
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="feather feather-chevrons-up"
+                >
+                    <polyline points="17 11 12 6 7 11"></polyline>
+                    <polyline points="17 18 12 13 7 18"></polyline>
+                </svg>
+            </button>
         </Container>
     );
 };

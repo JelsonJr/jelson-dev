@@ -4,6 +4,7 @@ export const Container = styled.section`
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 90px 0;
     height: 850px;
     background: linear-gradient(to bottom, #031449, #034dae);
 

@@ -9,6 +9,7 @@ import AboutMe from "views/AboutMe";
 import ErrorPage from "views/ErrorPage";
 import MyProjects from "views/MyProjects";
 import Contact from "views/Contact";
+import Footer from "components/Footer";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "react-tooltip/dist/react-tooltip.css";
@@ -35,6 +36,7 @@ function App() {
                                     <AboutMe />
                                     <MyProjects />
                                     <Contact />
+                                    <Footer />
                                 </Container>
                             </>
                         }

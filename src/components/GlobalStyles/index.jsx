@@ -29,7 +29,6 @@ html {
   line-height: 1.15; 
   -webkit-text-size-adjust: 100%; 
   font-family: 'StarJedi';
-
 }
 body {
   margin: 0;
@@ -169,6 +168,19 @@ template {
 }
 [hidden] {
   display: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;     
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4CAF50;
+  border-radius: 10px; 
+}
+
+::-webkit-scrollbar-track {
+  background-color: #000;
 }
 `;
 
