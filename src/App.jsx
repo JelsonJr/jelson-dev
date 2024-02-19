@@ -11,8 +11,15 @@ import MyProjects from "views/MyProjects";
 import Contact from "views/Contact";
 import Footer from "components/Footer";
 import { ToastContainer } from "react-toastify";
+import { register } from "swiper/element/bundle";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 import "react-toastify/dist/ReactToastify.css";
 import "react-tooltip/dist/react-tooltip.css";
+
+register();
 
 const Container = styled.main`
     opacity: ${props => (props.$isMenuOpen ? 0.6 : 1)};

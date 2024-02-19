@@ -1,15 +1,15 @@
 [
     {
         "name": "otávio",
-        "github": "",
-        "linkdin": "",
+        "github": "https://github.com/OkeLDF",
+        "linkdin": "https://www.linkedin.com/in/ot%C3%A1vio-folador-11b533292/",
         "image": "/assets/images/thanks/otavio.jpeg",
         "alt": "Meu amigo Otávio posando para uma foto"
     },
     {
         "name": "thais",
-        "github": "",
-        "linkdin": "",
+        "github": "https://github.com/iahtsr",
+        "linkdin": "https://www.linkedin.com/in/thais-fabiana-haus-a8661b164/",
         "image": "/assets/images/thanks/thais.jpeg",
         "alt": "Minha amiga Thais numa selfie"
     }
