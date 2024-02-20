@@ -2,13 +2,10 @@ import styled from "styled-components";
 
 export const Container = styled.article`
     background-color: rgba(0, 0, 0, 0.6);
-    height: 60vh;
     border-radius: 20px;
+    height: 550px;
+    max-height: 80vh;
     flex: none;
-
-    @media (max-width: 480px) {
-        height: 65vh;
-    }
 `;
 
 export const Image = styled.div`
@@ -50,7 +47,7 @@ export const ProjectDescription = styled.span`
 export const Link = styled.a`
     display: block;
     width: 50%;
-    margin-top: 40px;
+    margin-top: 20px;
     padding: 5px;
     border-radius: 10px;
     font-family: "InterBold";
