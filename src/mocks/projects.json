@@ -12,5 +12,19 @@
         "description": "toca músicas feito em C com a biblioteca allegro 5.",
         "image": "/assets/images/projects/musicSymbol.jpg",
         "alt": "logos laranjados de simbolos musicais"
+    },
+    {
+        "name": "Pacman",
+        "linkGithub": "https://github.com/JelsonJr/Pacman",
+        "description": "Game do pacman feito em C++ e SMFL.",
+        "image": "/assets/images/projects/pacman2.png",
+        "alt": "imagem do jogo do pacman sendo executado."
+    },
+    {
+        "name": "Alugames",
+        "linkGithub": "https://github.com/JelsonJr/alugames",
+        "description": "Projeto de kotlin feito no curso 'Linguagem Kotlin' da Alura.",
+        "image": "/assets/images/projects/kotlin.png",
+        "alt": "imagem de um código kotlin do projeto."
     }
 ]
