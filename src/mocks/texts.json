@@ -18,6 +18,10 @@
             "description": "Welcome, masters, knights, and padawans of this galaxy (and others too). My name is Jelson, and I am the creator of this website. I am 19 years old, a software engineering student at UEPG, and also a junior programmer. In addition to technology and programming, I am also a fan of games, series, movies, and books. \nI created this site to showcase some of my work, contact information, and future projects. Inspired by the classic saga of George Lucas, I decided to pay tribute to this masterpiece, which is one of the most important works in the history of cinema and in my life. \nif you're interested in forming a partnership, initiating a project, or exploring collaboration opportunities, feel free to get in touch! until soon, and may the force be with you!",
             "end": "end"
         },
+        "projects": {
+            "title": "my projects",
+            "text": "a list of all the projects I did after developing this website"
+        },
         "errorPage": {
             "error": "error 404: ",
             "description": "it's over, i have the high ground.",
@@ -25,6 +29,7 @@
             "here": "here",
             "return": "to return"
         },
+        "carrouselLink": "Visit the source code",
         "audio": "/assets/audio/mayTheForceBeWithYou.mp3",
         "copy": "copied to your clipboard!",
         "tips": {
@@ -57,6 +62,10 @@
             "description": "bem-vindos, mestres, cavaleiros e padawans dessa galáxia (e de outras também). me chamo jelson e sou o criador deste website. tenho 19 anos, sou estudante de engenharia de software na uepg e também sou programador júnior. além da tecnologia e programação, também sou fã de games, séries, filmes e livros. \ncriei este site para divulgar um pouco do meu trabalho, contato e futuros projetos. inspirado na saga clássica de George Lucas, resolvi homenagear essa que é uma das obras mais importantes da história do cinema e da minha vida. \n caso tenha interesse em uma parceria, iniciar um projeto ou divulgação, não deixe de entrar em contato! até breve, que a força esteja com você!",
             "end": "end"
         },
+        "projects": {
+            "title": "meus projetos",
+            "text": "uma lista com todos os projetos que fiz após desenvolver este site"
+        },
         "errorPage": {
             "error": "erro 404: ",
             "description": "acabou, eu estou em terreno firme.",
@@ -64,6 +73,7 @@
             "here": "aqui",
             "return": "para retornar"
         },
+        "carrouselLink": "Visitar o código fonte.",
         "audio": "/assets/audio/mayTheForceBeWithYou.mp3",
         "copy": "Copiado para sua área de transferência!",
         "tips": {
@@ -74,7 +84,7 @@
         },
         "footer": {
             "title": "Agradecimentos e menções",
-            "text": "A minha amiga Thais, uma verdadeira Jedi dos códigos e defensora incansável contra os bugs indesejados. Que além de me auxiliar a encontrar bugs nesse projeto, também me guiou na árdua jornada da arquitetura de computadores. \nAo meu amigo Otávio, um nobre Jedi que me além de me instruir em álgebra e cálculo, também teve a brilhante ideia da mensagem de erro deste site."
+            "text": "A minha amiga Thais, uma verdadeira Jedi contra os bugs indesejados. Que além de me auxiliar a encontrar bugs nesse projeto, também me guiou na árdua jornada da arquitetura de computadores. \nAo meu amigo Otávio, um nobre Jedi que me além de me instruir em álgebra e cálculo, também teve a brilhante ideia da mensagem de erro deste site."
         }
     }
 }

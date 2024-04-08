@@ -2,6 +2,8 @@ import styled from "styled-components";
 import Carousel from "components/Carousel";
 import Projects from "mocks/projects.json";
 import { Title } from "components/Title";
+import { useContext } from "react";
+import { LanguagesContext } from "context/contextLanguage";
 
 const Container = styled.section`
     display: flex;
@@ -18,10 +20,12 @@ const Container = styled.section`
 `;
 
 const MyProjects = () => {
+    const { texts, language } = useContext(LanguagesContext);
+
     return (
         <Container id="projects">
-            <Title>Meus projetos</Title>
-            <p>uma lista com todos os projetos que desenvolvi após criar este site:</p>
+            <Title>{texts[language].projects.title}</Title>
+            <p>{texts[language].projects.text}:</p>
             <Carousel items={Projects} />
         </Container>
     );

@@ -1,71 +1,36 @@
 import PropTypes from "prop-types";
 import Item from "./Item";
+import styled from "styled-components";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { useRef } from "react";
-import { Button, Buttons, CarouselDiv, Container } from "./styles";
+
+const Container = styled.div`
+    width: 100%;
+    max-width: 960px;
+`;
 
 const Carousel = ({ items }) => {
-    const carousel = useRef(null);
+    const audioBreathingRef = useRef();
 
-    const handleLeftClick = e => {
-        e.preventDefault();
-        carousel.current.scrollLeft -= carousel.current.offsetWidth;
-    };
+    const handleSlider = () => {
+        const randomValue = Math.random().toFixed(1);
+        const probabilityToPlayAudio = 0.4;
 
-    const handleRightClick = e => {
-        e.preventDefault();
-        carousel.current.scrollLeft += carousel.current.offsetWidth;
+        if (randomValue <= probabilityToPlayAudio) {
+            audioBreathingRef.current.play();
+        }
     };
 
     return (
         <Container>
-            <CarouselDiv ref={carousel}>
-                {items.map((item, index) => (
-                    <Item
-                        key={index}
-                        link={item.linkGithub}
-                        name={item.name}
-                        description={item.description}
-                        image={item.image}
-                        alt={item.alt}
-                    />
+            <Swiper onSlideChange={handleSlider} slidesPerView={1} navigation pagination={{ clickable: true }}>
+                {items.map(({ image, alt, description, linkGithub, name }, index) => (
+                    <SwiperSlide key={index}>
+                        <Item alt={alt} image={image} description={description} link={linkGithub} name={name} />
+                    </SwiperSlide>
                 ))}
-            </CarouselDiv>
-            <Buttons>
-                <Button onClick={handleLeftClick}>
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="28"
-                        height="28"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="#fff"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="feather feather-chevrons-left"
-                    >
-                        <polyline points="11 17 6 12 11 7"></polyline>
-                        <polyline points="18 17 13 12 18 7"></polyline>
-                    </svg>
-                </Button>
-                <Button onClick={handleRightClick}>
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="28"
-                        height="28"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="#fff"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="feather feather-chevrons-right"
-                    >
-                        <polyline points="13 17 18 12 13 7"></polyline>
-                        <polyline points="6 17 11 12 6 7"></polyline>
-                    </svg>
-                </Button>
-            </Buttons>
+            </Swiper>
+            <audio ref={audioBreathingRef} src="/assets/audio/darthVaderBreathing.mp3" />
         </Container>
     );
 };
